@@ -1,1 +1,1 @@
-# -Python-egoroff_channel
+# ООП на Python от egoroff_channel

@@ -1,5 +1,5 @@
 class Lion:
-    roar = 'Rrrrrrr!!!'
+    roar = print('Rrrrrrr!!!')
 
 simba = Lion()
 simba.roar()

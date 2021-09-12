@@ -1,5 +1,7 @@
 class Lion:
-    roar = print('Rrrrrrr!!!')
+    def roar(self):
+        roar = print('Rrrrrrr!!!')
+
 
 simba = Lion()
-simba.roar()
+#  simba.roar() stepic не принимает

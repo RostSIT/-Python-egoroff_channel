@@ -25,7 +25,8 @@ Sample Output 3:
 
 1BoB2BoB3BoB4BoB5
 '''
+
 a = str(input())
-print(1,2,3,4,5,sep=a)
+print(1, 2, 3, 4, 5, sep=a)
 
 

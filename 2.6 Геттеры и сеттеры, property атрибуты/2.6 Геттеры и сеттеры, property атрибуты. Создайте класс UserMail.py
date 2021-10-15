@@ -17,10 +17,12 @@ k.email = 'prince@still@.wait'  # Ошибочная почта
 k.email = 'prince@still.wait'
 print(k.email)  # prince@still.wait'''
 
+
 class UserMail:
-    def __init__(self, login, __email):
+
+    def __init__(self, login, email):
         self.login = login
-        self.__email = __email
+        self.__email = email
 
     def get_email(self,):
         return self.__email
@@ -28,7 +30,7 @@ class UserMail:
     def set_email(self, new_email):
         if isinstance(new_email, str)\
             and new_email.count('@') == 1\
-            and '.' in new_email[new_email.find('@'):]:
+                and '.' in new_email[new_email.find('@'):]:  # Ищем точку от сабаки и до конца строки
             self.__email = new_email
         else:
             print("Ошибочная почта")

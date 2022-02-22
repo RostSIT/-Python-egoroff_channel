@@ -17,7 +17,7 @@ p2.set_coordinates(4, 6)
 d = p1.get_distance(p2) # вернёт 5.0
 p1.get_distance(10) # Распечатает "Передана не точка"'''
 
-import math
+from math import sqrt
 
 
 class Point:
@@ -28,7 +28,7 @@ class Point:
 
     def get_distance(self, arg):
         if isinstance(arg, Point):
-            return ((self.x - arg.x) ** 2 + (self.y - arg.y) ** 2) ** 0.5
+            return sqrt((self.x - arg.x) ** 2 + (self.y - arg.y) ** 2)
         else:
             print(f'Передана не точка')
 
